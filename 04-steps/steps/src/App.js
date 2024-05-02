@@ -7,6 +7,15 @@ const messages = [
 ];
 
 const App = () => {
+  return (
+    <div>
+      <Steps />
+      <Steps />
+    </div>
+  )
+}
+
+const Steps = () => {
   const [step, setStep] = useState(1)
   const [isOpen, setIsOpen] = useState(true)
 
@@ -20,7 +29,7 @@ const App = () => {
   }
 
   return (
-    <>
+    <div>
       <button className="close" onClick={()=>setIsOpen(is => !is)}>&times;</button>
       { isOpen && (
         <div className="steps">
@@ -38,7 +47,7 @@ const App = () => {
           </div>
         </div>
         )}
-    </>
+    </div>
   )
 }
 
