@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // Components
 import Spinner from './Spinner'
 import Message from './Message'
